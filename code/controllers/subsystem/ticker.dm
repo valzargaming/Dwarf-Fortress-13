@@ -236,7 +236,7 @@ SUBSYSTEM_DEF(ticker)
 
 	if(retrycap >= 4)
 		hide_mode = FALSE
-		mode = config.pick_mode("extended")
+		mode = config.pick_mode("dwarfs")
 		to_chat(world, "<span class='notice big'>Enjoy your stay!</span>")
 	else
 		message_admins(span_notice("DEBUG: Bypassing start checks... Don't forget to disable Debug-Game after the game start!"))
@@ -545,7 +545,7 @@ SUBSYSTEM_DEF(ticker)
 	if(mode)
 		GLOB.master_mode = mode
 	else
-		GLOB.master_mode = "extended"
+		GLOB.master_mode = "dwarfs"
 	log_game("Saved mode is '[GLOB.master_mode]'")
 
 /datum/controller/subsystem/ticker/proc/save_mode(the_mode)
