@@ -32,7 +32,7 @@
 	desc = "Shovel made for excavating soils."
 	icon = 'dwarfs/icons/items/tools.dmi'
 	icon_state = "shovel"
-	worn_icon_state = "shovel"
+	worn_icon = 'dwarfs/icons/mob/clothing/belt.dmi'
 	lefthand_file = 'dwarfs/icons/mob/inhand/lefthand.dmi'
 	righthand_file = 'dwarfs/icons/mob/inhand/righthand.dmi'
 	flags_1 = CONDUCT_1
